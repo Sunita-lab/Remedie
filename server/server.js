@@ -11,6 +11,9 @@ app.use(express.json());
 const authRoutes = require('./routes/authRoutes');
 app.use('/api/auth', authRoutes);
 
+const doctorRoutes = require('./routes/doctorRoutes');
+app.use('/api/doctors', doctorRoutes);
+
 // Test route
 app.get('/', (req, res) => {
   res.send('Remedie API is running...');
