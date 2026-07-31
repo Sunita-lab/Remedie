@@ -2,16 +2,14 @@ import { Button } from "@/components/ui/button"
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center gap-4" style={{ backgroundColor: 'var(--color-bg)' }}>
-      <h1 style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-heading)' }} className="text-4xl font-bold">
+    <div className="min-h-screen flex flex-col items-center justify-center gap-4 bg-background">
+      <h1 className="text-4xl font-bold text-foreground">
         Remedie 🏥
       </h1>
-      <p style={{ color: 'var(--color-muted)' }}>Every Patient. Every Journey. Connected.</p>
-      <Button 
-  style={{ backgroundColor: 'var(--color-primary)', borderRadius: 'var(--radius-button)', color: '#FFFFFF' }}
->
-  Schedule Appointment
-</Button>
+      <p className="text-muted-foreground">Every Patient. Every Journey. Connected.</p>
+      <Button>Schedule Appointment</Button>
+      <Button variant="secondary">Secondary Action</Button>
+      <Button variant="destructive">Cancel</Button>
     </div>
   )
 }
