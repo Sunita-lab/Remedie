@@ -1,8 +1,18 @@
+import DashboardLayout from "@/layouts/DashboardLayout";
+import { useAuth } from "@/context/AuthContext";
+
 const PatientDashboard = () => {
+  const { user } = useAuth();
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <h1 className="text-3xl font-bold text-foreground">Patient Dashboard 🩺</h1>
-    </div>
+    <DashboardLayout>
+      <h1 className="text-2xl font-bold text-foreground">
+        Welcome back, {user?.name} 👋
+      </h1>
+      <p className="text-muted-foreground mt-1">
+        Here's an overview of your healthcare journey.
+      </p>
+    </DashboardLayout>
   );
 };
 
