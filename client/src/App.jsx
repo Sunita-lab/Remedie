@@ -1,17 +1,17 @@
-import { Button } from "@/components/ui/button"
+import { Routes, Route } from "react-router-dom";
+import Login from "@/pages/Login";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center gap-4 bg-background">
-      <h1 className="text-4xl font-bold text-foreground">
-        Remedie 🏥
-      </h1>
-      <p className="text-muted-foreground">Every Patient. Every Journey. Connected.</p>
-      <Button>Schedule Appointment</Button>
-      <Button variant="secondary">Secondary Action</Button>
-      <Button variant="destructive">Cancel</Button>
-    </div>
-  )
+    <>
+      <Toaster position="top-center" />
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </>
+  );
 }
 
-export default App
+export default App;
