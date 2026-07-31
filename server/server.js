@@ -16,6 +16,9 @@ app.use('/api/doctors', doctorRoutes);
 
 const patientRoutes = require('./routes/patientRoutes');
 app.use('/api/patients', patientRoutes);
+
+const appointmentRoutes = require('./routes/appointmentRoutes');
+app.use('/api/appointments', appointmentRoutes);
 // Test route
 app.get('/', (req, res) => {
   res.send('Remedie API is running...');

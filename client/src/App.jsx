@@ -5,6 +5,7 @@ import ProtectedRoute from "@/components/ProtectedRoute";
 import AdminDashboard from "@/pages/AdminDashboard";
 import PatientDashboard from "@/pages/PatientDashboard";
 import DoctorDashboard from "@/pages/DoctorDashboard";
+import Appointments from "@/pages/patient/Appointments";
 import { Toaster } from "react-hot-toast";
 
 function App() {
@@ -39,6 +40,14 @@ function App() {
             </ProtectedRoute>
           }
         />
+        <Route
+         path="/patient/appointments"
+         element={
+        <ProtectedRoute allowedRoles={["patient"]}>
+          <Appointments />
+        </ProtectedRoute>
+       }
+      />
       </Routes>
     </>
   );
