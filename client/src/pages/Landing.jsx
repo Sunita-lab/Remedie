@@ -4,6 +4,8 @@ import Stats from "@/components/landing/Stats";
 import FlowOfCare from "@/components/landing/FlowOfCare";
 import Features from "@/components/landing/Features";
 import Testimonials from "@/components/landing/Testimonials";
+import CTABanner from "@/components/landing/CTABanner";
+import Footer from "@/components/landing/Footer";
 
 const Landing = () => {
   return (
@@ -14,6 +16,8 @@ const Landing = () => {
         <FlowOfCare />
         <Features />
         <Testimonials />
+        <CTABanner />
+      <Footer />
     </div>
   );
 };
