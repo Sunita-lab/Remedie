@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, HeartPulse } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const LandingNavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,9 +17,8 @@ const LandingNavbar = () => {
     <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center">
-            <HeartPulse className="w-5 h-5 text-white" />
-          </div>
+  <img src={logo} alt="Remedie" className="w-12 h-9" />
+  <div></div>
           <div>
             <p className="font-[var(--font-logo)] text-lg font-semibold text-foreground leading-none">
               Remedie
