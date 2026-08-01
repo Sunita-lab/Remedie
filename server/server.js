@@ -27,6 +27,9 @@ app.use('/api/medical-records', medicalRecordRoutes);
 
 const prescriptionRoutes = require('./routes/prescriptionRoutes');
 app.use('/api/prescriptions', prescriptionRoutes);
+
+const billRoutes = require('./routes/billRoutes');
+app.use('/api/bills', billRoutes);
 // Test route
 app.get('/', (req, res) => {
   res.send('Remedie API is running...');
