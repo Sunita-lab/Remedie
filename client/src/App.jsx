@@ -13,6 +13,7 @@ import Billing from "@/pages/patient/Billing";
 import AdminBilling from "@/pages/admin/Billing";
 import AdminDoctors from "@/pages/admin/Doctors";
 import AdminPatients from "@/pages/admin/Patients";
+import Landing from "@/pages/Landing";
 import { Toaster } from "react-hot-toast";
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
     <>
       <Toaster position="top-center" />
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Landing/>} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route
