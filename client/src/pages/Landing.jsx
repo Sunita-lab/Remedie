@@ -3,6 +3,7 @@ import Hero from "@/components/landing/Hero";
 import Stats from "@/components/landing/Stats";
 import FlowOfCare from "@/components/landing/FlowOfCare";
 import Features from "@/components/landing/Features";
+import Testimonials from "@/components/landing/Testimonials";
 
 const Landing = () => {
   return (
@@ -12,6 +13,7 @@ const Landing = () => {
         <Stats />
         <FlowOfCare />
         <Features />
+        <Testimonials />
     </div>
   );
 };
