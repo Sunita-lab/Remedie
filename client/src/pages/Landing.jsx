@@ -2,6 +2,7 @@ import LandingNavbar from "@/components/LandingNavbar";
 import Hero from "@/components/landing/Hero";
 import Stats from "@/components/landing/Stats";
 import FlowOfCare from "@/components/landing/FlowOfCare";
+import Features from "@/components/landing/Features";
 
 const Landing = () => {
   return (
@@ -10,6 +11,7 @@ const Landing = () => {
       <Hero />
         <Stats />
         <FlowOfCare />
+        <Features />
     </div>
   );
 };
