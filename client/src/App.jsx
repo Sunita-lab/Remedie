@@ -7,6 +7,9 @@ import PatientDashboard from "@/pages/PatientDashboard";
 import DoctorDashboard from "@/pages/DoctorDashboard";
 import Appointments from "@/pages/patient/Appointments";
 import DoctorAppointments from "@/pages/doctor/Appointments";
+import MedicalRecords from "@/pages/patient/MedicalRecords";
+import Prescriptions from "@/pages/patient/Prescriptions";
+import Billing from "@/pages/patient/Billing";
 import { Toaster } from "react-hot-toast";
 
 function App() {
@@ -54,6 +57,30 @@ function App() {
   element={
     <ProtectedRoute allowedRoles={["doctor"]}>
       <DoctorAppointments />
+    </ProtectedRoute>
+  }
+/>
+<Route
+  path="/patient/records"
+  element={
+    <ProtectedRoute allowedRoles={["patient"]}>
+      <MedicalRecords />
+    </ProtectedRoute>
+  }
+/>
+<Route
+  path="/patient/prescriptions"
+  element={
+    <ProtectedRoute allowedRoles={["patient"]}>
+      <Prescriptions />
+    </ProtectedRoute>
+  }
+/>
+<Route
+  path="/patient/billing"
+  element={
+    <ProtectedRoute allowedRoles={["patient"]}>
+      <Billing />
     </ProtectedRoute>
   }
 />
