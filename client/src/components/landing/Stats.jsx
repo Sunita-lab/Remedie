@@ -11,7 +11,7 @@ const Stats = () => {
 
   return (
     <section className="max-w-7xl mx-auto px-6 py-10">
-      <div className="bg-card border border-border rounded-2xl p-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
+      <div className="bg-card border border-border rounded-2xl p-8 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-8">
         {stats.map(({ icon: Icon, value, label }) => (
           <div key={label} className="flex items-center gap-3">
             <div className="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
