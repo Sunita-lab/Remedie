@@ -20,7 +20,7 @@ const LandingNavbar = () => {
   <img src={logo} alt="Remedie" className="w-12 h-9" />
   <div></div>
           <div>
-            <p className="font-[var(--font-logo)] text-lg font-semibold text-foreground leading-none">
+            <p className="font-[var(--font-logo)] text-lg font-semibold text-primary leading-none">
               Remedie
             </p>
             <p className="text-[10px] text-muted-foreground">Hospital Management System</p>
