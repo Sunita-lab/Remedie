@@ -13,6 +13,7 @@ import Billing from "@/pages/patient/Billing";
 import AdminBilling from "@/pages/admin/Billing";
 import AdminDoctors from "@/pages/admin/Doctors";
 import AdminPatients from "@/pages/admin/Patients";
+import AdminAppointments from "@/pages/admin/Appointments";
 import Landing from "@/pages/Landing";
 import { Toaster } from "react-hot-toast";
 
@@ -56,6 +57,14 @@ function App() {
         </ProtectedRoute>
        }
       />
+      <Route
+  path="/admin/appointments"
+  element={
+    <ProtectedRoute allowedRoles={["admin"]}>
+      <AdminAppointments />
+    </ProtectedRoute>
+  }
+/>
       <Route
   path="/doctor/appointments"
   element={
